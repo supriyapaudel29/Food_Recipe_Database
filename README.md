@@ -24,7 +24,7 @@ It allows users to browse and search food recipes online, while administrators c
 1. Install **Xampp**  on your system.
 2. Start **Apache** and **MySQL** services.
 3. Copy the project folder **food_recipe_database** into:
-    C:\xampp\htdocs\FullStack\
+    C:\xampp\htdocs\Sem3\FullStack\
 4. Open your browser and go to **phpMyAdmin**.
 5. Create a new database named:
     food_recipe_database
