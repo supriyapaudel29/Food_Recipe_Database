@@ -1,0 +1,271 @@
+ 
+   /* RESET & VARIABLES */
+ 
+:root {
+    --primary: #2980b9;
+    --primary-dark: #1f618d;
+    --bg: #f8f9fa;
+    --text-dark: #2c3e50;
+    --border: #ddd;
+    --success: #27ae60;
+    --error: #c0392b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+   /* BODY & TYPOGRAPHY */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: #333;
+    padding: 12px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--text-dark);
+    text-align: center;
+    margin: 18px 0 10px;
+}
+
+p, label {
+    font-size: 16px;
+}
+
+/* 
+   HEADER & NAVIGATION
+ */
+header, nav {
+    text-align: center;
+    margin: 16px 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 
+   FORMS
+ */
+form {
+    background: #fff;
+    padding: 22px;
+    border-radius: 12px;
+    max-width: 520px;
+    margin: 22px auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0 18px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    font-size: 16px;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form button {
+    width: 100%;
+    padding: 16px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: var(--primary-dark);
+}
+
+/* 
+   MESSAGES
+ */
+.error {
+    color: var(--error);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.success {
+    color: var(--success);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* 
+   TABLES (MOBILE SAFE)
+ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin: 22px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    font-size: 15px;
+}
+
+th {
+    background: var(--primary);
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background: #f3f6f9;
+}
+
+tr:hover {
+    background: #eaf2f8;
+}
+
+table a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Horizontal scroll only on small screens */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* 
+   IMAGES
+ */
+.recipe-img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    display: block;
+    margin: 0 auto 16px;
+}
+
+/* 
+   AUTOCOMPLETE
+ */
+.autocomplete-suggestions {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    z-index: 999;
+}
+
+.autocomplete-suggestions div {
+    padding: 12px;
+    cursor: pointer;
+}
+
+.autocomplete-suggestions div:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+/* 
+   FOOTER (NO HTML CHANGE)
+ */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ccc, transparent);
+    margin: 50px 0 20px;
+}
+
+body > p:last-of-type {
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    padding: 14px 12px;
+    margin: 0 auto 10px;
+}
+
+/* 
+   SMALL SCREENS
+ */
+@media (max-width: 480px) {
+
+    h1 { font-size: 22px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 18px; }
+
+    p, label {
+        font-size: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    body > p:last-of-type {
+        font-size: 13px;
+        padding: 12px;
+    }
+}
