@@ -27,7 +27,7 @@ It allows users to browse and search food recipes online, while administrators c
     C:\xampp\htdocs\Sem3\FullStack\
 4. Open your browser and go to **phpMyAdmin**.
 5. Create a new database named:
-    food_recipe_database
+    food_recipe_db
 6. Import the provided SQL file into the database.
 7. Open a browser and visit:
     http://localhost/Sem3/FullStack/food_recipe_database.
@@ -40,7 +40,6 @@ It allows users to browse and search food recipes online, while administrators c
 - View list of food recipes
 - View detailed recipe information
 - Search recipes by name
-- Search recipes by ingredients
 - Responsive user interface
 
 ### Admin Features
@@ -74,10 +73,9 @@ It allows users to browse and search food recipes online, while administrators c
 
 ## Known Issues
 
-- Passwords are stored without hashing
 - No password reset functionality
-- Limited validation on image uploads
 - UI can be further improved for smaller screens
+
 
 ## Technologies Used
 
@@ -88,7 +86,7 @@ It allows users to browse and search food recipes online, while administrators c
 - JavaScript
 - Ajax
 - XAMPP
-- Git & GitHub
+- GitHub
 
 
 ## Author
